@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <div class="row w-100">
+                <div class="col-0 col-sm-2"></div>
+                <div class="col-12 col-md-4 d-flex align-items-center">
+                    <!-- Logo -->
+                    <a class="navbar-brand me-3" href="#">
+                        <img src="images/flipkart_logo.svg" alt="" style="height: 40px;">
+                    </a>
+                
+                    <!-- Search Bar -->
+                    <div class="input-group flex-grow-1">
+                        <input type="text" class="form-control d-none d-sm-block" placeholder="Search your product" aria-label="Search" aria-describedby="search-icon">
+                        <span class="input-group-text" id="search-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 d-flex align-items-middle">
+                    <button class="navbar-toggler bg-light w-100" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Login, More, Cart -->
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-end">
+                            <!-- Login -->
+                            <li class="nav-item">
+                                <a class="nav-link text-primary text-center bg-light" style="width:100px;height:40px;" href="#" id="login" role="button" aria-expanded="false">
+                                    Login
+                                </a>
+                            </li>
+                            <!-- More -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-light text-center dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    More
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">About us</a></li>
+                                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <!-- Cart -->
+                            <li class="nav-item">
+                                <a class="nav-link text-light text-center" style="width:70px;height:40px;padding-left:0px;" href="#" id="cart" role="button" aria-expanded="false">
+                                    <i class="fas fa-shopping-cart"></i> Cart
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div> <!-- row -->
+        </div>
+    </nav>
+      
+    <!-- Main Navigation Categories -->
+    <nav class="category-nav" aria-label="Main product categories">
+        <div class="nav-container">
+            <a href="#" class="nav-item" title="Explore Top Offers">
+                <img src="images/nav/top offers.png" alt="Best Deals and Top Offers on Electronics, Fashion and More">
+                <span>Top Offers</span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Grocery">
+                <img src="images/nav/grocery.png" alt="Grocery">
+                <span>Grocery</span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Mobiles">
+                <img src="images/nav/mobiles.png" alt="Mobiles">
+                <span>Mobiles</span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Fashion">
+                <img src="images/nav/fashion.png" alt="Fashion">
+                <span>
+                    Fashion
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Electronics">
+                <img src="images/nav/elec.png" alt="Electronics">
+                <span>
+                    Electronics
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Home">
+                <img src="images/nav/home.png" alt="Home">
+                <span>
+                    Home
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Appliances">
+                <img src="images/nav/appliances.png" alt="Appliances">
+                <span>
+                    Appliances
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Travel">
+                <img src="images/nav/travel.png" alt="Travel">
+                <span>Travel</span>
+            </a>
+            <a href="#" class="nav-item" title="Explore Beauty, Toys & More">
+                <img src="images/nav/Beauty,toy.png" alt="Beauty, Toys & More">
+                <span>
+                    Beauty, Toys & More
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Deals of the day -->
+    <!-- section will be here for deals of the day -->
+    <section class="deals" aria-label="Deals of the Day">
+        <div class="section-header">
+            <div style="display: flex; align-items: center; gap: 10px">
+                <h2>Deals of the Day</h2>
+                <span>&#128338;</span>
+                <span class="timer" id="timer">22:07:36 Left</span>
+            </div>
+            <a href="#" class="view-all">VIEW ALL</a>
+        </div>
+        <div class="deals-container">
+            <button class="scroll-button scroll-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="product-grid">
+                <a href="#" class="product-link" title="Shop Casio and Fastrack Watches">
+                    <div class="product-card">
+                        <img src="images/dod/watch.jpg" alt="Premium Casio and Fastrack Watches Collection">
+                        <h3 class="product-title">Casio, Fastrack</h3>
+                        <span class="product-price">&#x20b9;2500</span>
+                        <p class="product-desc">aesthetic watch to wear.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Premium Tablets">
+                    <div class="product-card">
+                        <img src="images/dod/tablet.jpeg" alt="Premium tablet for day to day task">
+                        <h3 class="product-title">Premium tablet</h3>
+                        <span class="product-price">&#x20b9;10000</span>
+                        <p class="product-desc">for day to day task.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Lava A1500">
+                    <div class="product-card">
+                        <img src="images/dod/A1500.jpeg" alt="Lava A1500 new feature phone">
+                        <h3 class="product-title">Lava A1500</h3>
+                        <span class="product-price">&#x20b9;39.99</span>
+                        <p class="product-desc">new feature phone.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Powerbanks">
+                    <div class="product-card">
+                        <img src="images/dod/pb.jpeg" alt="Powerbank to get your power anywhere">
+                        <h3 class="product-title">Powerbank</h3>
+                        <span class="product-price">&#x20b9;800</span>
+                        <p class="product-desc">get your power anywhere.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Sunglasses">
+                    <div class="product-card">
+                        <img src="images/dod/glasses.jpeg" alt="Sun glasses with black glass and blue filter">
+                        <h3 class="product-title">Sun glasses</h3>
+                        <span class="product-price">&#x20b9;400</span>
+                        <p class="product-desc">black glass with blue filter.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Headphones">
+                    <div class="product-card">
+                        <img src="images/dod/headphone.jpeg" alt="High-quality sound headphones">
+                        <h3 class="product-title">Headphones</h3>
+                        <span class="product-price">&#x20b9;1500</span>
+                        <p class="product-desc">High-quality sound.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Bluetooth Speakers">
+                    <div class="product-card">
+                        <img src="images/dod/bt.jpeg" alt="Portable and powerful Bluetooth Speaker">
+                        <h3 class="product-title">Bluetooth Speaker</h3>
+                        <span class="product-price">&#x20b9;2000</span>
+                        <p class="product-desc">Portable and powerful.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Laptops">
+                    <div class="product-card">
+                        <img src="images/dod/laptop.jpeg" alt="Laptop for all your needs">
+                        <h3 class="product-title">Laptop</h3>
+                        <span class="product-price">&#x20b9;45000</span>
+                        <p class="product-desc">For all your needs.</p>
+                    </div>
+                </a>
+            </div>
+
+            <button class="scroll-button scroll-right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+        
+    </section>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Books and music instruments -->
+    <!-- section will be here books and music instruments -->
+    <section class="deals" aria-label="Books and Musical Instruments">
+        <div class="section-header">
+            <h2>Books And Music Instruments</h2>
+            <a href="#" class="view-all">VIEW ALL</a>
+        </div>
+        <div class="deals-container">
+            <button class="scroll-button scroll-left">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="product-grid">
+                <a href="#" class="product-link" title="Rich Dad Poor Dad - Financial Education Book">
+                    <div class="product-card">
+                        <img src="images/books/rich dad poor dad.jpeg" alt="Rich Dad Poor Dad by Robert Kiyosaki - Best Selling Financial Book">
+                        <h3 class="product-title">Rich dad poor dad</h3>
+                        <span class="product-price">&#x20b9;300</span>
+                        <p class="product-desc">master the finance.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Atomic Habits - Self Improvement Book">
+                    <div class="product-card">
+                        <img src="images/books/atomic habits.jpeg" alt="Atomic Habits by James Clear - Self Improvement Book">
+                        <h3 class="product-title">Atomic habits</h3>
+                        <span class="product-price">&#x20b9;400</span>
+                        <p class="product-desc">observe yourself closely.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="VD Guitar - Musical Instrument">
+                    <div class="product-card">
+                        <img src="images/books/guitar.jpeg" alt="VD Guitar - Play Music with Notes">
+                        <h3 class="product-title">VD guitar</h3>
+                        <span class="product-price">&#x20b9;20000</span>
+                        <p class="product-desc">play music with notes.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Think Like a Monk - Self Help Book">
+                    <div class="product-card">
+                        <img src="images/books/think like monk.jpg" alt="Think Like a Monk by Jay Shetty - Self Help Book">
+                        <h3 class="product-title">Think like a monk</h3>
+                        <span class="product-price">&#x20b9;280</span>
+                        <p class="product-desc">you control your mind.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="The Secret - Self Help Book">
+                    <div class="product-card">
+                        <img src="images/books/The-Secret.png" alt="The Secret by Rhonda Byrne - Self Help Book">
+                        <h3 class="product-title">The secret</h3>
+                        <span class="product-price">offer at &#x20b9;9</span>
+                        <p class="product-desc">take help of universe.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Pianos">
+                    <div class="product-card">
+                        <img src="images/books/piano.jpeg" alt="Piano - Play Beautiful Music">
+                        <h3 class="product-title">Piano</h3>
+                        <span class="product-price">&#x20b9;30000</span>
+                        <p class="product-desc">Play beautiful music.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Drums">
+                    <div class="product-card">
+                        <img src="images/books/drums.jpeg" alt="Drums - Feel the Rhythm">
+                        <h3 class="product-title">Drums</h3>
+                        <span class="product-price">&#x20b9;15000</span>
+                        <p class="product-desc">Feel the rhythm.</p>
+                    </div>
+                </a>
+                <a href="#" class="product-link" title="Shop Violins">
+                    <div class="product-card">
+                        <img src="images/books/violin.jpeg" alt="Violin - Elegant and Classic">
+                        <h3 class="product-title">Violin</h3>
+                        <span class="product-price">&#x20b9;12000</span>
+                        <p class="product-desc">Elegant and classic.</p>
+                    </div>
+                </a>
+            </div>
+            <button class="scroll-button scroll-right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Bootstrap files -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+        document.querySelectorAll('.scroll-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const direction = button.classList.contains('scroll-left') ? -1 : 1;
+                const container = button.parentElement.querySelector('.product-grid');
+                container.scrollBy({
+                    left: direction * 200,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function startTimer(duration, display) {
+        let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = parseInt(timer / 3600, 10);
+                minutes = parseInt((timer % 3600) / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ":" + minutes + ":" + seconds + " Left";
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            const timerElement = document.getElementById('timer');
+            const time = 22 * 3600 + 7 * 60 + 36;
+            startTimer(time, timerElement);
+        };
+   </script>
+</body>
+</html>
