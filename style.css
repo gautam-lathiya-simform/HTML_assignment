@@ -133,18 +133,6 @@
   display: none;
 }
 
-.deals-ad {
-  width: 230px;
-  min-width: 230px;
-  padding: 20px 0;
-}
-
-.deals-ad img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .product-card {
   flex: 0 0 auto;
   width: 200px;
@@ -197,7 +185,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* .header-container {} */
 
   .product-card {
     min-width: 200px;
